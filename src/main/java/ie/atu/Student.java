@@ -1,5 +1,6 @@
 package ie.atu;
 
+import java.util.Scanner;
 public class Student {
     String name;
     String email;
@@ -36,5 +37,18 @@ public class Student {
         this.name = " ";
         this.email=" ";
         this.course=" ";
+    }
+    //Method to get user input
+    public void inputDetails(){
+        Scanner scanner =new Scanner(System.in);
+
+        System.out.print("Enter name:");
+        this.name=scanner.nextLine();
+
+        System.out.print("Enter email:");
+        this.email=scanner.nextLine();
+
+        System.out.print("Enter course:");
+        this.course=scanner.nextLine();
     }
 }
