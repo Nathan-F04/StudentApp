@@ -51,4 +51,7 @@ public class Student {
         System.out.print("Enter course:");
         this.course=scanner.nextLine();
     }
+    public void displayDetails(){
+        System.out.print("Name: " + getName() + " Email: " + getEmail() + " Course: " + getCourse());
+    }
 }
