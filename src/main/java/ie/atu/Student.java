@@ -17,12 +17,21 @@ public class Student {
         return course;
     }
     //Setters
-    public void setCourse(String course) {this.course = course;}
+    public void setCourse(String course) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter course:");
+        this.course=scanner.nextLine();
+    }
     public void setEmail(String email) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter email:");
+        this.email=scanner.nextLine();
         this.email = email;
     }
     public void setName(String name) {
-        this.name = name;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter name:");
+        this.name=scanner.nextLine();
     }
     //Constructor 3 parameters
     public Student(String name,String email,String course) {
