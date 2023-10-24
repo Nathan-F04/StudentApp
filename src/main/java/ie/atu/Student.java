@@ -26,7 +26,6 @@ public class Student {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter email:");
         this.email=scanner.nextLine();
-        this.email = email;
     }
     public void setName(String name) {
         Scanner scanner = new Scanner(System.in);
