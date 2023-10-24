@@ -17,21 +17,25 @@ public class Student {
         return course;
     }
     //Setters
-    public void setCourse(String course) {
-        this.course = course;
-    }
+    public void setCourse(String course) {this.course = course;}
     public void setEmail(String email) {
         this.email = email;
     }
     public void setName(String name) {
         this.name = name;
     }
-    //Constructor
+    //Constructor 3 parameters
     public Student(String name,String email,String course) {
         this.name = name;
         this.email=email;
         this.course=course;
     }
+
+    //Constructor name
+    public Student(String name) {
+        this.name = name;
+    }
+
     //Default constructor
     public Student() {
         this.name = " ";
