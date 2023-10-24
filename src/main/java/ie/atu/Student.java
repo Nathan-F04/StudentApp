@@ -42,6 +42,7 @@ public class Student {
     //Constructor name
     public Student(String name) {
         this.name = name;
+
     }
 
     //Default constructor
