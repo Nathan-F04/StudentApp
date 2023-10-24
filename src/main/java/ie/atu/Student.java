@@ -50,19 +50,6 @@ public class Student {
         this.email=" ";
         this.course=" ";
     }
-    //Method to get user input
-    public void inputDetails(){
-        Scanner scanner =new Scanner(System.in);
-
-        System.out.print("Enter name:");
-        this.name=scanner.nextLine();
-
-        System.out.print("Enter email:");
-        this.email=scanner.nextLine();
-
-        System.out.print("Enter course:");
-        this.course=scanner.nextLine();
-    }
     public void displayDetails(){
         System.out.print("Name: " + getName() + " Email: " + getEmail() + " Course: " + getCourse());
     }
