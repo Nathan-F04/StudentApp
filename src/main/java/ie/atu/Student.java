@@ -1,12 +1,13 @@
 package ie.atu;
 
-import java.util.Scanner;
 public class Student {
+
+    //Creating private strings to store info for students names, emails, and courses
     private String name;
     private String email;
     private String course;
 
-    //Getters
+    //Getters below
     public String getName() {
         return name;
     }
@@ -16,17 +17,14 @@ public class Student {
     public String getCourse() {
         return course;
     }
-    //Setters
 
-
+    //Setters below
     public void setCourse(String course) {
         this.course = course;
     }
-
     public void setName(String name) {
         this.name = name;
     }
-
     public void setEmail(String email) {
         this.email = email;
     }
@@ -50,6 +48,7 @@ public class Student {
         this.email=" ";
         this.course=" ";
     }
+    //Displaying details method
     public void displayDetails(){
         System.out.print("Name: " + getName() + " Email: " + getEmail() + " Course: " + getCourse());
     }
