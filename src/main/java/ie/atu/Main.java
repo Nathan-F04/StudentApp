@@ -10,26 +10,33 @@ public class Main {
         Student student1=new Student();
         //Student 1 setting info
 
-        System.out.print("Enter name:");
+        System.out.print("Enter Name:");
         student1.setName(scanner.nextLine());
-
-        System.out.print("Enter email:");
+        System.out.print("Enter Email:");
         student1.setEmail(scanner.nextLine());
-
-        System.out.print("Enter course:");
+        System.out.print("Enter Course:");
         student1.setCourse(scanner.nextLine());
         //adding sample strings to paramaterised constructors
 
-        Student student3=new Student("nameSample2","emailSample","courseSample");
 
-        System.out.print("Enter name:");
-        scanner.nextLine();
-        Student student2=new Student("nameSample");
-        System.out.print("Enter email:");
+        String studentname,studentemail,studentcourse;
+        System.out.print("Enter Name:");
+        studentname=scanner.nextLine();
+        Student student2=new Student(studentname);
+        System.out.print("Enter Email:");
         student2.setEmail(scanner.nextLine());
-        System.out.print("Enter course:");
+        System.out.print("Enter Course:");
         student2.setCourse(scanner.nextLine());
 
+        String studentname2;
+        System.out.print("Enter Name:");
+        studentname2=scanner.nextLine();
+        System.out.print("Enter Email:");
+        studentemail=scanner.nextLine();
+        System.out.print("Enter Course:");
+        studentcourse=scanner.nextLine();
+        Student student3=new Student(studentname2,studentemail,studentcourse);
+        scanner.close();
         // Call the display info method
         student1.displayDetails();
         student2.displayDetails();
