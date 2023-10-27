@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class StudentApp {
 
-
     public static void main(String[] args) {
         //Creating scanner
         Scanner scanner =new Scanner(System.in);
