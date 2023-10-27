@@ -50,6 +50,6 @@ public class Student {
     }
     //Displaying details method
     public void displayDetails(){
-        System.out.print("Name: " + getName() + " Email: " + getEmail() + " Course: " + getCourse());
+        System.out.print("\nName: " + getName() + " Email: " + getEmail() + " Course: " + getCourse());
     }
 }
